@@ -25,7 +25,7 @@ class DatabasesStack(cdk.Stack):  # type: ignore
     ) -> None:
         """
         AWS Data Wrangler Development Databases Infrastructure.
-        Includes Redshift, Aurora PostgreSQL, Aurora MySQL, Microsoft SQL Server.
+        Includes Redshift, Aurora PostgreSQL, Aurora MySQL, Microsoft SQL Server, Oracle.
         """
         super().__init__(scope, construct_id, **kwargs)
 
@@ -40,6 +40,7 @@ class DatabasesStack(cdk.Stack):  # type: ignore
         self._setup_mysql()
         self._setup_mysql_serverless()
         self._setup_sqlserver()
+        self._setup_oracle()
 
     def _set_db_infra(self) -> None:
         self.db_username = "test"
