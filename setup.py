@@ -32,6 +32,6 @@ setup(
         "jsonpath-ng>1.5.3",
         "progressbar2>3.53.3",
         "opensearch-py>1.0.0",
-        "pyodbc~4.0.32"
+        "pyodbc>=4.0.32"
     ]
 )
