@@ -2,6 +2,7 @@ from setuptools import setup
 
 
 setup(
+    version="2.14.0",
     name="awswrangler",
     description="Pandas on AWS",
     long_description=open("README.md", encoding="utf-8").read(),
