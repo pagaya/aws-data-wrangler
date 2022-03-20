@@ -29,9 +29,9 @@ setup(
         "pg8000>=1.16.0,<1.23.0",
         "openpyxl>3.0.0",
         "requests-aws4auth<1.1.1",
-        "jsonpath-ng>1.5.3",
+        "jsonpath-ng<1.5.3",
         "progressbar2>3.53.3",
-        "opensearch-py>1.0.0",
-        "pyodbc>=4.0.32"
+        "opensearch-py",
+        "pyodbc>=4.0.0"
     ]
 )
